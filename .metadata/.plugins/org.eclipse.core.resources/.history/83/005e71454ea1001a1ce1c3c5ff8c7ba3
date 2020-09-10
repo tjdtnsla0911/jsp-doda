@@ -1,0 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ include file="../include/Nav.jsp" %>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>지옥의 코딩 Blog 2020-05-29</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+package myblog.model;
+
+public class fruitshop {public fruitshop() {
+	// TODO Auto-generated constructor stub
+private int furitnumber;
+private String furit;
+private String kind;
+
+}

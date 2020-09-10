@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;neko.gif&apos; to &apos;img&apos;&#x0D;&#x0A;- Original project: &apos;baseball&apos;&#x0D;&#x0A;- Destination element: &apos;img&apos;&#x0D;&#x0A;- Original element: &apos;neko.gif&apos;" description="Copy file" element1="WebContent/js/neko.gif" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1592539695240" target="/baseball/WebContent/WEB-INF/img" units="0" version="1.0"/>
+</session>

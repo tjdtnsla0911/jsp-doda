@@ -1,0 +1,62 @@
+package com.cos.blog.repository;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.cos.blog.db.DBConn;
+import com.cos.blog.model.Board;
+
+public class BoardRepository {
+	private static final String TAG = "BoardRepository :";
+	private static BoardRepository instance = new BoardRepository();
+
+	private BoardRepository() {
+	}
+
+	public static BoardRepository getInstance() {
+		return instance;
+	}
+
+	private Connection conn = null;
+	private PreparedStatement pstmt = null;
+	private ResultSet rs = null;
+
+	public int save(Board board) {
+		final String SQL = "";
+		try {
+			conn = DBConn.getConnectionon();
+			pstmt = conn.prepareStatement(SQL);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG + "sava :" + e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt);
+		}
+		return -1;
+	}
+
+	public int update(Board board) {
+		final String SQL = "";
+		try {
+			conn = DBConn.getConnectionon();
+			pstmt = conn.prepareStatement(SQL);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG + "updata :" + e.getMessage());
+		}
+		return -1;
+	}
+	public int deleteById(int id) {
+		final String SQL ="";
+		try {
+			conn =DBConn.getConnectionon();
+			pstmt=conn.prepareStatement(SQL);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

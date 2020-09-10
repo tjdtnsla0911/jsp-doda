@@ -1,0 +1,11 @@
+package com.cos.blog.repository;
+
+public class UsersRepository {
+	private static final String TAG="UsersRepositiony :";
+	private static UsersRepository instance =new UsersRepository(); //싱글톤
+	private UsersRepository() {}
+	public static UsersRepository getInstance() {
+		return instance;
+	}
+
+}

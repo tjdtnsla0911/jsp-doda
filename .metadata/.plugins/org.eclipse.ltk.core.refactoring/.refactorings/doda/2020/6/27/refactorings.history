@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring accessors="true" comment="Delete 2 elements from project &apos;doda&apos;&#x0D;&#x0A;- Original project: &apos;doda&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     activation-1.1.jar&#x0D;&#x0A;     smtp.jar" description="Delete elements" element1="WebContent/image/activation-1.1.jar" element2="WebContent/image/smtp.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1593402223281" subPackages="false" version="1.0"/>&#x0A;&#x0A;</session>

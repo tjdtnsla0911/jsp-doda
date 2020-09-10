@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost (2)-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost (2)" name="Tomcat v8.5 Server at localhost (2)" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="43">
+    <list key="modules" value0="satBlog::org.eclipse.jst.jee.server:satBlog::jst.web::3.0" value1="sat0613Answer::org.eclipse.jst.jee.server:sat0613Answer::jst.web::3.0" value2="sat0613::org.eclipse.jst.jee.server:sat0613::jst.web::3.0" value3="blog::org.eclipse.jst.jee.server:blog::jst.web::3.1" value4="blog3::org.eclipse.jst.jee.server:blog3::jst.web::3.1" value5="test::org.eclipse.jst.jee.server:test::jst.web::3.0" value6="baseball::org.eclipse.jst.jee.server:baseball::jst.web::3.1" value7="doda::org.eclipse.jst.jee.server:doda::jst.web::3.1"/>
+  </server>
+</servers>

@@ -1,0 +1,18 @@
+package myblog.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class fruitshop{
+
+private int furitnumber;
+private String furit;
+private String kind;
+private int price;
+private int sales;
+
+}

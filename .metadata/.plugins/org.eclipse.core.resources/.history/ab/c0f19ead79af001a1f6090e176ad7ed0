@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+
+<body>
+	<form>
+	  <button type="button" class="btn btn-warning float-right" onclick="usernameCheck()">처음으로</button>   <button type="button" class="btn btn-warning float-right" onclick="usernameCheck()">가격순</button>   <button type="button" class="btn btn-warning float-right" onclick="usernameCheck()">판매순</button>
+	</form>
+	<table border="1">
+		<tr>
+			<td>번호</td>
+			<td>이름</td>
+			<td>종류</td>
+			<td>가격</td>
+			<td>판매수</td>
+
+		</tr>
+		<c:forEach var="fruitshops" items="${fruitshops}">
+			<tr>
+
+				<td>${fruitshops.fruitnumber}</td>
+				<td>${fruitshops.fruit}</td>
+				<td>${fruitshops.kind}</td>
+				<td>${fruitshops.price}</td>
+				<td>${fruitshops.sales}</td>
+			</tr>
+
+
+		</c:forEach>
+
+
+
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+package com.cos.blog.repository;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.cos.blog.db.DBConn;
+import com.cos.blog.model.Users;
+
+public class UsersRepository {
+	private static final String TAG = "UsersRepositiony :";
+	private static UsersRepository instance = new UsersRepository(); // 싱글톤
+
+	private UsersRepository() {
+	}
+
+	public static UsersRepository getInstance() {
+		return instance;
+	}
+
+	private Connection conn = null;
+	private PreparedStatement pstmt = null;
+	private ResultSet rs = null;
+
+	public int save(Users user){
+		final String SQL = "INSERT INTO USERS(id,username,password,email,address,userRole,createDate) VALUES(users_sql.nextval,?,?,?,?,?,sysdate)";
+		try {
+			conn = DBConn.getConnectionon();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, user.getUsername());
+			pstmt.setString(2, user.getPassword());
+			pstmt.setString(3, user.getEmail());
+			pstmt.setString(4, user.getAddress());
+			pstmt.setString(5, user.getUserRole());
+			return pstmt.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG+"sava :"+e.getMessage());
+		}finally {
+			DBConn.close(conn, pstmt);
+		}
+	}
+
+}
